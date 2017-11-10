@@ -1,3 +1,8 @@
+package ua.service.impl;
+
+import java.security.Principal;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,7 +20,7 @@ import ua.repository.UserRepository;
 import ua.service.PlaceService;
 
 @Service
-public class PlaceServiceImpl implements PlaceService {
+public abstract class PlaceServiceImpl implements PlaceService {
 
 	private final PlaceRepository repository;
 
